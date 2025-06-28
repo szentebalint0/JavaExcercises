@@ -27,4 +27,11 @@ public class Car {
     protected void runEngine(){
         System.out.println("The " + this.getClass().getSimpleName() + "'s Engine is running");
     }
+
+    @Override
+    public String toString() {
+        return "Car{" +
+                "model='" + model + '\'' +
+                '}';
+    }
 }
