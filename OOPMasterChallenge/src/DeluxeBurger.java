@@ -10,7 +10,7 @@ public class DeluxeBurger extends Burger{
             this.toppings.add(topping);
         }
         else {
-            System.out.println("Maximum number of toppings is 5!\n\n");
+            System.out.println("Maximum number of toppings is 5!\n");
         }
     }
 

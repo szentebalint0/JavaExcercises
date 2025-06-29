@@ -55,7 +55,6 @@ public class Order {
     public void getOrderPrinted(){
         System.out.println("Your order has been printed: ");
         System.out.println(burger);
-
         if (!(burger instanceof DeluxeBurger)){
             System.out.println(drink);
             System.out.println(fries);
