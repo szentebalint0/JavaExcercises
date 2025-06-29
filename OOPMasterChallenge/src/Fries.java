@@ -28,10 +28,6 @@ public class Fries {
 
     @Override
     public String toString() {
-        return "Fries{" +
-                "itemName='" + itemName + '\'' +
-                ", size=" + size +
-                ", price=" + price +
-                '}';
+        return itemName + " " + size + " $" + price;
     }
 }

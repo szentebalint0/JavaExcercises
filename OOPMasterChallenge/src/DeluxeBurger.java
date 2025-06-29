@@ -10,9 +10,12 @@ public class DeluxeBurger extends Burger{
             this.toppings.add(topping);
         }
         else {
-            System.out.println("Maximum number of toppings is 5!");
+            System.out.println("Maximum number of toppings is 5!\n\n");
         }
     }
 
-
+    @Override
+    public String toString() {
+        return "Deluxe Burger $" + getPrice() ;
+    }
 }

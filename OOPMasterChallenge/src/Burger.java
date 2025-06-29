@@ -32,10 +32,16 @@ public class Burger {
 
     @Override
     public String toString() {
-        return "Burger{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", toppings=" + toppings +
-                '}';
+        String returnString = name + " " + price + "$" + "\n";
+
+        for (int i = 0; i<this.toppings.size(); i++) {
+            if (i == 0){
+                returnString += this.toppings.get(i).getName() + " $" +  this.toppings.get(i).getPrice();
+            }
+            returnString += "\n"+ this.toppings.get(i).getName() + " $" +  this.toppings.get(i).getPrice();
+
+        }
+
+        return returnString;
     }
 }

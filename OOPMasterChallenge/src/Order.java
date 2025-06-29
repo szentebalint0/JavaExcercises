@@ -44,25 +44,23 @@ public class Order {
         this.price += this.burger.getPrice();
     }
 
-    public void addBurgerTopping(String[] deluxeToppings){
+    public void addBurgerTopping(String[] toppings){
 
-        for(int i = 0; i < deluxeToppings.length; i++){
-            this.burger.addTopping(deluxeToppings[i]);
+        for(int i = 0; i < toppings.length; i++){
+            this.burger.addTopping(toppings[i]);
         }
 
     }
 
-    public double getPrice() {
-        return price;
-    }
+    public void getOrderPrinted(){
+        System.out.println("Your order has been printed: ");
+        System.out.println(burger);
 
-    @Override
-    public String toString() {
-        return "Order{" +
-                "burger=" + burger +
-                ", drink=" + drink +
-                ", fries=" + fries +
-                ", price=" + price +
-                '}';
+        if (!(burger instanceof DeluxeBurger)){
+            System.out.println(drink);
+            System.out.println(fries);
+        }
+        System.out.println("-".repeat(30));
+        System.out.println("Total: $" + price + "\n\n");
     }
 }
