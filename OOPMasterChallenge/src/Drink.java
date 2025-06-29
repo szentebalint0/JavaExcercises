@@ -14,16 +14,8 @@ public class Drink {
         };
     }
 
-    public String getName() {
-        return name;
-    }
-
     public double getPrice() {
         return price;
-    }
-
-    public Size getSize() {
-        return size;
     }
 
     @Override

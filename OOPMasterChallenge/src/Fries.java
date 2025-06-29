@@ -14,14 +14,6 @@ public class Fries {
         };
     }
 
-    public String getItemName() {
-        return itemName;
-    }
-
-    public Size getSize() {
-        return size;
-    }
-
     public double getPrice() {
         return price;
     }

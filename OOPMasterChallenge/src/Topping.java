@@ -14,11 +14,4 @@ public class Topping {
     public String getName() {
         return name;
     }
-
-    @Override
-    public String toString() {
-        return "Topping{" +
-                "name='" + name + '\'' +
-                '}';
-    }
 }
