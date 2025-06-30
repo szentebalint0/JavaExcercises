@@ -20,6 +20,5 @@ public class Main {
         Order order3 = new Order(deluxeOrder, "Lemonade");
 
         order3.getOrderPrinted();
-
     }
 }
