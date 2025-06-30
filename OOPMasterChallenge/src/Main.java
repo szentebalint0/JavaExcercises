@@ -15,7 +15,7 @@ public class Main {
 
         order2.getOrderPrinted();
 
-        String[] deluxeOrder = {"Chicken", "Jalapeno", "Bacon", "Mayo", "Tomato", "Pepsi"};
+        String[] deluxeOrder = {"Chicken", "Jalapeno", "Bacon", "Mayo", "Tomato"};
 
         Order order3 = new Order(deluxeOrder, "Lemonade");
 
