@@ -20,5 +20,10 @@ public class Main {
         Order order3 = new Order(deluxeOrder, "Lemonade");
 
         order3.getOrderPrinted();
+
+        Order order4 = new Order("Sajtos McRoyal", 3.99, "Zöld tea", Size.MEDIUM, Size.LARGE);
+        order4.addBurgerTopping("Ubi nélkül");
+
+        order4.getOrderPrinted();
     }
 }
