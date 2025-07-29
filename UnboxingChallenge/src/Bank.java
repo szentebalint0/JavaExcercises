@@ -37,20 +37,26 @@ public class Bank {
         if (findCustomerByName(name) != null){
             findCustomerByName(name).addTransaction(amount);
         }
+    }
+
+    private void printInformation(){
 
 
 
     }
 
-    public void printInformation(){
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
 
         for (Customer customer : this.customers) {
-            System.out.println("Customer: " + customer.getName());
-            for (Double  amount : customer.getTransactions()) {
-                System.out.println("$" + amount);
+            sb.append("Customer: ").append(customer.getName()).append("\n");
+            for (Double amount : customer.getTransactions()) {
+                sb.append("\t\t\t$").append(amount).append("\n");
             }
         }
 
+        return sb.toString();
     }
 
 }

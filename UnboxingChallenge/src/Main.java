@@ -9,7 +9,7 @@ public class Main {
         otp.addTransaction("Bálint", 100);
         otp.addTransaction("B", 5);
         otp.addTransaction("Bálint", -5);
-        otp.printInformation();
+        System.out.println(otp);
 
     }
 
