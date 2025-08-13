@@ -1,21 +1,11 @@
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.List;
 
 public class Test {
     public static void main(String[] args) {
 
-        ArrayList<String> testList = new ArrayList<String>();
+        var list = List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
 
-        testList.add("A");
-        testList.add("B");
-        testList.add("C");
-
-        Iterator<String> iterator = testList.iterator();
-        while (iterator.hasNext()) {
-            if (iterator.next().equals("A")) {iterator.remove(); }
-        }
-
-        System.out.println(testList);
+        System.out.println(list);
 
     }
 }

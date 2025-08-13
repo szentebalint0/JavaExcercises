@@ -34,7 +34,9 @@ public class Monster implements ISaveable {
     public void read(List<String> list) {
 
         if (list != null && !list.isEmpty()) {
-            list.addAll(List.of(this.name, Integer.toString(hitPoints), Integer.toString(strength)));
+            this.name = list.get(0);
+            this.hitPoints = Integer.parseInt(list.get(1));
+            this.strength = Integer.parseInt(list.get(2));
         }
 
     }
